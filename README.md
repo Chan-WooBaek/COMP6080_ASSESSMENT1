@@ -2,7 +2,7 @@
 
 ## Change Log
 
-N/A
+ * 14/09: Made clarifications to the rendering logic of task 4; width/viewport width; text at the BOTTOM of page_small.png (task3) made the same as the big page
 
 ## Background & Motivation
 
@@ -18,9 +18,11 @@ The latter part of this assessment touches on some topics from weeks 2 and 3. Do
 
 ## Tasks
 
+When we refer to "viewport width" below, we're referring to the size you can set your browser viewport at. You can learn more about how to do this [here](https://developer.chrome.com/docs/devtools/device-mode/).
+
 ### Task 1 - Static, fixed size page
 
-Build a page that looks identical to `task1/page.png`. The window width you should work with is 1398 x 665 pixels. You are only allowed to use HTML and CSS for this task. No external libraries are permitted.
+Build a page that looks identical to `task1/page.png`. The viewport width you should work with is 1398 x 665 pixels. You are only allowed to use HTML and CSS for this task. No external libraries are permitted.
 
 ![](./task1/page.PNG)
 
@@ -33,7 +35,7 @@ Please build your page in `task1/index.html`. You are welcome to create as many 
 
 ### Task 2 - Static, fixed size page
 
-Build a page that looks identical to `task2/page.png`. The window width you should work with is 807 x 807 pixels. You are only allowed to use HTML and CSS for this task. No external libraries are permitted.
+Build a page that looks identical to `task2/page.png`. The viewport width you should work with is 807 x 807 pixels. You are only allowed to use HTML and CSS for this task. No external libraries are permitted.
 
 ![](./task2/page.PNG)
 
@@ -96,9 +98,9 @@ When the "remove" button is clicked, the `textarea` has all of its text removed 
 The "output" refers to what the inner HTML text should be of the textarea at the bottom of the page.
 
 * If they haven't inputted a firstname, or the firstname entered is invalid, the output should be "Do not enter an invalid firstname"
-* If they have inputted a first name, but haven't inputted a last name or the lastname is invalid, the output should be "Do not enter an invalid lastname"
-* If they have inputted a first name and a last name, but haven't inputted a valid date of birth, the output should be "Do not enter an invalid date of birth"
-* If they have entered a valid first name, last name, and date of birth, the output is "Hello [first name] [last name], you are [age (integer)] years old, your favourite cheese is [favourite cheese] and you've lived in [cities]."
+* Else, if they have inputted a first name, but haven't inputted a last name or the lastname is invalid, the output should be "Do not enter an invalid lastname"
+* Else if they have inputted a first name and a last name, but haven't inputted a valid date of birth, the output should be "Do not enter an invalid date of birth"
+* Else if they have entered a valid first name, last name, and date of birth, the output is "Hello [first name] [last name], you are [age (integer)] years old, your favourite cheese is [favourite cheese] and you've lived in [cities]."
   * If no cities are selected, [cities] is "no cities"
   * If 1 city is selected, [cities] is just "[city1]"
   * If 2 or more cities are selected, [cities] is just "[city1], [city2], [city3]"
