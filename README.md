@@ -3,6 +3,9 @@
 ## Change Log
 
  * 14/09: Made clarifications to the rendering logic of task 4; width/viewport width; text at the BOTTOM of page_small.png (task3) made the same as the big page
+ * 16/09: Removed the red underline from task3
+ * 19/09: Submission instructions updated (trialing out new system)
+ * 19/09: Made task3 small image more consistent with first image as per  https://edstem.org/au/courses/7029/discussion/594795?comment=1366067
 
 ## Background & Motivation
 
@@ -201,9 +204,11 @@ knowledge.
 
 This assignment is due *Monday 4th of October, 10pm*.
 
-Our systems automatically record the most recent push you make to your `master` branch. Therefore,
-to "submit" your code you simply need to make sure that your `master` branch (on the gitlab website)
-is the code that you want marked for this task.
+To submit your assignment, simply run the following command on a CSE terminal:
+
+`$ 6080 submit ass1`
+
+This will submit the latest commit on master as your submission.
 
 It is your responsibiltiy to ensure that your code can be successfully demonstrated on the CSE machines (e.g. vlab)
 from a fresh clone of your repository. Failure to ensure this may result in a loss of marks.
