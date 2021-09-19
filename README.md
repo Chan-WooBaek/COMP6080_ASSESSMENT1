@@ -5,6 +5,7 @@
  * 14/09: Made clarifications to the rendering logic of task 4; width/viewport width; text at the BOTTOM of page_small.png (task3) made the same as the big page
  * 16/09: Removed the red underline from task3
  * 19/09: Submission instructions updated (trialing out new system)
+ * 19/09: Made task3 small image more consistent with first image as per  https://edstem.org/au/courses/7029/discussion/594795?comment=1366067
 
 ## Background & Motivation
 
