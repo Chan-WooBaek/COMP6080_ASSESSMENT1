@@ -6,6 +6,7 @@
  * 16/09: Removed the red underline from task3
  * 19/09: Submission instructions updated (trialing out new system)
  * 19/09: Made task3 small image more consistent with first image as per  https://edstem.org/au/courses/7029/discussion/594795?comment=1366067
+ * 01/10: Due date extended by 12 hours
 
 ## Background & Motivation
 
@@ -202,7 +203,7 @@ knowledge.
 
 ## Submission
 
-This assignment is due *Monday 4th of October, 10pm*.
+This assignment is due *Tuesday 5th of October, 10am*.
 
 To submit your assignment, simply run the following command on a CSE terminal:
 
