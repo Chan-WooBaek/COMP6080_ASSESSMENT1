@@ -1,1 +1,45 @@
-<p>Hello world</p>
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<form name="signup">
+			<table border="1">
+				<tr>
+					<td>First Name</td>
+					<td><input type="text" name="firstname" size="15"></td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td><input type="text" name="lastname" size="15"></td>
+				</tr>
+				<tr>
+					<td>Date of birth</td>
+					<td><input type="text" name="dateofbirth" size="15"></td>
+				</tr>
+				<tr>
+					<td>Favourite animal</td>
+					<td>    <select name="favouriteanimal">
+							<option value="Haloumi">Haloumi</option>
+							<option value="Brie">Brie</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Cities lived in</td>
+					<td>
+						<input type="checkbox" name="adelaide"> Adelaide <br>
+						<input type="checkbox" name="perth"> Perth <br>
+						<input type="checkbox" name="hobart"> Hobart <br>
+						<input type="checkbox" name="darwin"> Darwin
+					</td>
+				</tr>
+			</table>
+			<br>
+			<button name="remove">Remove</button>
+			<br><br>
+			<Textarea name="textarea" rows=13 cols=65></Textarea>
+		</form>
+		<script src="index.js"></script>
+	</body>
+</html>
