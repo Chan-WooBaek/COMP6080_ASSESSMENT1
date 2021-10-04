@@ -4,13 +4,12 @@
         <title>Task 1</title>
         <style type="text/css">
 			.box1 {
-				height: 365px;
+				height: 360px;
 				width: 1398px;
 				padding-top: 45px;
 				background-color: #cccccc;
 				color: #7d6a5f;
-				font-family: Arial, Helvetica, sans-serif;
-				font-weight: bolder;
+				font-family: 'Arial';
 			}
 			.whitebox {
 				height: 205px;
@@ -26,18 +25,29 @@
 				margin-top: 20px;
 				margin-right: 25px;
 			}
+			.heading1format {
+				font-size: 230%;
+				font-stretch: ultra-condensed;
+				word-spacing: 1px;
+			}
+			.heading2format {
+				font-size: 200%;
+				font-stretch: ultra-condensed;
+			}
+			.bodyformat {
+				font-size: 17px;
+				word-spacing: 3px;
+			}
 			.p1 {
-				margin-left: 100px;
-				line-height: 30px;
-				word-spacing: 2px;
+				margin-left: 110px;
+				line-height: 28px;
 			}
 			.box2 {
-				height: 300px;
+				height: 230px;
 				width: 1398px;
 				padding-top: 30px;
 				color: #7d6a5f;
-				font-family: Arial, Helvetica, sans-serif;
-				font-weight: bolder;
+				font-family: Arial;
 			}
 			li {
 				font-size: 23px;
@@ -47,32 +57,41 @@
 			}
         </style>
 	</head>
-	<body>
+	<body style="margin: 0px;">
         <div class=box1>
 			<div class=whitebox>
 				<img class=logo src="assets/logo.png"/>
 			</div>
 			<div class="p1">
-				<h1>HOW WALNUTS ARE IMPORTANT TO UNSW</h1>
-				There are three main types of walnuts found in Sydney:<br>
-				<ul style=font-size:130%>
+				<h1 class="heading1format">
+					HOW WALNUTS ARE IMPORTANT TO UNSW
+				</h1>
+				<p class="bodyformat">
+					There are three main types of walnuts found in Sydney:
+				</p>
+				<ul class="bodyformat">
 						<li><span>Red walnuts; and</span></li>
 						<li><span>Non-red walnuts</span></li>
 				</ul>
-				Walnuts really can't be oversimplified in terms of how they're eaten. It's actually very<br>
-				simple. You grab one, you place it on your mouth, you swallow, you smile, everyone is <br>
-				happy.
+				<p class="bodyformat">
+					Walnuts really can't be oversimplified in terms of how they're eaten. It's actually very<br>
+					simple. You grab one, you place it on your mouth, you swallow, you smile, everyone is <br>
+					happy.
+				</p>
+				
 			</div>   
         </div>
         <div class=box2>
 			<div class="p1"> 
-				<h1>NUT REGIONS</h1>
-				<p>At UNSW, nuts are grown anywhere that food can also be found. In particular, food courts.</p>
-				Its important to understand that walnuts have a lot in common with other kinds of nuts and <br>
-				their respective regions too.
+				<h1 class="heading2format">NUT REGIONS</h1>
+				<p class="bodyformat"> At UNSW, nuts are grown anywhere that food can also be found. In particular, food courts.</p>
+				<p class="bodyformat">
+					It's important to understand that walnuts have a lot in common with other kinds of nuts and <br>
+					their respective regions too.
+				</p> 
 			</div>
         </div>
-        
-        <img src=page.png>
+		
+
 	</body>
 </html>
