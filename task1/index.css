@@ -1,0 +1,52 @@
+.box1 {
+    height: 350px;
+    width: 1398px;
+    padding-top: 45px;
+    background-color: #cccccc;
+    color: #7d6a5f;
+    font-family: 'Arial';
+}
+.whitebox {
+    height: 205px;
+    width: 380px;
+    background-color: white;
+    float: right;
+    margin-top: 25px;
+    margin-right: 100px;
+
+}
+.logo {
+    float: right;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+.heading1format {
+    font-size: 230%;
+    font-stretch: ultra-condensed;
+    word-spacing: 1px;
+}
+.heading2format {
+    font-size: 200%;
+    font-stretch: ultra-condensed;
+}
+.bodyformat {
+    font-size: 17px;
+    word-spacing: 3px;
+}
+.p1 {
+    margin-left: 110px;
+    line-height: 28px;
+}
+.box2 {
+    height: 230px;
+    width: 1398px;
+    padding-top: 30px;
+    color: #7d6a5f;
+    font-family: Arial;
+}
+li {
+    font-size: 23px;
+}
+li span {
+    font-size: 17px;
+}
