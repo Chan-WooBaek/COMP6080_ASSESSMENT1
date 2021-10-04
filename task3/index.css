@@ -10,7 +10,7 @@
         'b3 b4'
         'b5 b5'
         'b6 b6';
-        grid-gap: 1vh;
+    grid-gap: 1vh;
 }
 .textbox1 {grid-area: b1;}
 .textbox2 {grid-area: b2;}
@@ -20,6 +20,7 @@
 .textbox6 {
     padding-top: 8vh;
     grid-area: b6;
+    text-align: center;
 }
 .greyline {
     height: 1px;
@@ -31,13 +32,14 @@
     width: 100%;
     background-color: rgb(37, 37, 37);
     line-height: 5vh;
-    color: rgb(117, 117, 117);
+    color: white;
 }
 .tableborder1 td {
     border-bottom: 2pt solid rgb(37, 37, 37);
     padding: 2%;
     padding-left: 0px;
     empty-cells: show;
+    padding-right: 0px;
 }
 .textformat1 {
     font-family: Arial; 
@@ -47,6 +49,7 @@
     margin-top: 5%;
     font-style: italic;
     color: rgba(249, 249, 249, 255);
+    margin-right: 30%;
 }
 .textformat2 {
     font-family: Arial;
@@ -62,10 +65,37 @@
     font-family: Arial;
     color: rgba(249, 249, 249, 255);
 }
+.diamond {
+    display: inline;
+    position: relative;
+    margin-right: 3%;
+    top: 1vw; 
+    left: 1vw;
+}
+.learnmore {
+    background-color: rgb(37, 37, 37); 
+    color: white; 
+    height: 2vh; 
+    width: 11vw; 
+    border-radius: 2px; 
+    border-color: white;
+    float: right;
+    margin-top: 2%;
+    margin-right: 2%;
+    position: relative;
+}
+.signup {
+    height: 2.5vh; 
+    width: 14vw; 
+    background-color: rgb(39, 176, 105); 
+    color: white; 
+    border: rgb(39, 176, 105);
+}
 @media (max-width: 850px) {
     .container {
     display: grid;
     height: 96%;
+    width: 94%;
     padding: 1%;
     grid-template-areas:
         'b1'
@@ -74,11 +104,14 @@
         'b4'
         'b5'
         'b6';
-        grid-gap: 1px;
+    grid-gap: 1px;
+    grid-template-rows: 1fr 3fr 1fr 2fr 4f 8fr;    
     }
+    
     .textbox1 {
         grid-area: b1;
         padding-left: 4vw;
+        height: 5vh;
     }
     .textbox2 {
         grid-area: b2;
@@ -95,9 +128,48 @@
     .textbox5 {
         grid-area: b5;
     }
+    .textbox6 {
+        display: hide;
+    }
     .greyline {
         height: 1px;
         width: 100%;
         background-color: grey;
+    }
+    .greybox {
+        margin-left: 3vw;
+        margin-right: 1vw;
+        height: 7vh;
+        width: 95%;
+        padding-left: 2vw;
+        
+    }
+
+    .textformat1 {
+        font-family: Arial; 
+        font-size: 230%; 
+        font-weight: 700; 
+        line-height: 85%; 
+        margin-top: 5%;
+        font-style: italic;
+        color: rgba(249, 249, 249, 255);
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .diamond {
+        float: right;
+        margin: 3%;
+    }
+    .learnmore {
+        margin: 0px;
+        width: 28vw;
+        position: relative;
+        right: 50vw;
+        top: 4vh;
+    }
+    .signup {
+        margin-left: 3vw;
+        height: 2vh; 
+        width: 32vw;
     }
 }
