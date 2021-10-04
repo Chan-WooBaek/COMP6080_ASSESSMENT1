@@ -35,6 +35,7 @@ document.signup.dateofbirth.addEventListener('blur', (event) => {
     valid();
 })
 document.signup.favouriteanimal.addEventListener('change', (event) => {
+    fav = document.signup.favouriteanimal.value;
     valid();
 })
 document.signup.adelaide.addEventListener('change', (event) => {
