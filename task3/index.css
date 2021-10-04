@@ -32,7 +32,7 @@
     width: 100%;
     background-color: rgb(37, 37, 37);
     line-height: 5vh;
-    color: white;
+    color: rgb(249, 249, 249);
 }
 .tableborder1 td {
     border-bottom: 2pt solid rgb(37, 37, 37);
@@ -54,6 +54,7 @@
 .textformat2 {
     font-family: Arial;
     font-size: 105%;
+    color: rgb(156, 156, 156);
 }
 .textformat3 {
     font-family: Arial;
@@ -63,7 +64,7 @@
 }
 .textformat4 {
     font-family: Arial;
-    color: rgba(249, 249, 249, 255);
+    color: rgb(156, 156, 156);
 }
 .diamond {
     display: inline;
@@ -74,11 +75,11 @@
 }
 .learnmore {
     background-color: rgb(37, 37, 37); 
-    color: white; 
+    color: rgb(249, 249, 249); 
     height: 2vh; 
     width: 11vw; 
     border-radius: 2px; 
-    border-color: white;
+    border-color: rgb(249, 249, 249);
     float: right;
     margin-top: 2%;
     margin-right: 2%;
@@ -88,30 +89,32 @@
     height: 2.5vh; 
     width: 14vw; 
     background-color: rgb(39, 176, 105); 
-    color: white; 
+    color: rgb(249, 249, 249); 
     border: rgb(39, 176, 105);
 }
 @media (max-width: 850px) {
     .container {
-    display: grid;
-    height: 96%;
-    width: 94%;
-    padding: 1%;
-    grid-template-areas:
-        'b1'
-        'b3'
-        'b2'
-        'b4'
-        'b5'
-        'b6';
-    grid-gap: 1px;
-    grid-template-rows: 1fr 3fr 1fr 2fr 4f 8fr;    
+        display: grid;
+        height: 96%;
+        width: 94%;
+        padding: 1%;
+        grid-template-areas:
+            'b1'
+            'b3'
+            'b2'
+            'b4'
+            'b5'
+            'b6';
+        grid-gap: 1px;
+        grid-template-rows: 1fr 3fr 1fr 2fr 4f 8fr;    
     }
     
     .textbox1 {
         grid-area: b1;
         padding-left: 4vw;
         height: 5vh;
+        padding-bottom: 0px;
+        margin-top: 10px;
     }
     .textbox2 {
         grid-area: b2;
@@ -120,6 +123,7 @@
     .textbox3 {
         grid-area: b3;
         padding-left: 4vw;
+        padding-bottom: 4vh;
     }
     .textbox4 {
         grid-area: b4;
@@ -144,7 +148,6 @@
         padding-left: 2vw;
         
     }
-
     .textformat1 {
         font-family: Arial; 
         font-size: 230%; 
@@ -155,6 +158,9 @@
         color: rgba(249, 249, 249, 255);
         margin-right: 0px;
         margin-bottom: 0px;
+    }
+    .textformat2 {
+        margin-top: 0px;
     }
     .diamond {
         float: right;
