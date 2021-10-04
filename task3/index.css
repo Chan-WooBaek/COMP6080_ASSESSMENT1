@@ -9,7 +9,8 @@
         'b1 b2'
         'b3 b4'
         'b5 b5'
-        'b6 b6';
+        'b6 b6'
+        'b7 b7';
     grid-gap: 1vh;
 }
 .textbox1 {grid-area: b1;}
@@ -21,6 +22,10 @@
     padding-top: 8vh;
     grid-area: b6;
     text-align: center;
+}
+.textbox7 {
+    display: none;
+    grid-area: b7;
 }
 .greyline {
     height: 1px;
@@ -40,6 +45,8 @@
     padding-left: 0px;
     empty-cells: show;
     padding-right: 0px;
+    width: 94vw; 
+    border-spacing: 0px;
 }
 .textformat1 {
     font-family: Arial; 
@@ -85,12 +92,24 @@
     margin-right: 2%;
     position: relative;
 }
+.learnmore:hover {
+    opacity: 50%;
+}
 .signup {
+    margin-top: 3vh;
     height: 2.5vh; 
     width: 14vw; 
     background-color: rgb(39, 176, 105); 
     color: rgb(249, 249, 249); 
     border: rgb(39, 176, 105);
+}
+.signup:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+.fullpricing {
+    text-align: left; 
+    text-decoration: underline;
 }
 @media (max-width: 850px) {
     .container {
@@ -104,48 +123,63 @@
             'b2'
             'b4'
             'b5'
-            'b6';
+            'b7';
         grid-gap: 1px;
-        grid-template-rows: 1fr 3fr 1fr 2fr 4f 8fr;    
+        grid-template-rows: 1fr 3fr 1fr 2fr 4f 8fr 1fr;
+        grid-template-columns: 1fr; 
     }
     
     .textbox1 {
         grid-area: b1;
         padding-left: 4vw;
         height: 5vh;
-        padding-bottom: 0px;
+        padding-bottom: 3vw;
         margin-top: 10px;
     }
     .textbox2 {
         grid-area: b2;
         padding-left: 4vw;
+        padding-bottom: 1vh;
     }
     .textbox3 {
         grid-area: b3;
         padding-left: 4vw;
-        padding-bottom: 4vh;
+        padding-bottom: 2vh;
     }
     .textbox4 {
         grid-area: b4;
         padding-left: 4vw;
+        height: 12vh;
+        margin-bottom: 3vh;
     }
     .textbox5 {
         grid-area: b5;
+        height: 12vh;
     }
     .textbox6 {
-        display: hide;
+        grid-area: b6;
+        padding-left: 2vw;
+        display: none;
+    }
+    .textbox7 {
+        grid-area: b7;
+        color: white;
+        display: block;
+        padding: 2.5vw;
+        
     }
     .greyline {
         height: 1px;
         width: 100%;
         background-color: grey;
+        margin-top: 1vh;
     }
     .greybox {
         margin-left: 3vw;
         margin-right: 1vw;
         height: 7vh;
-        width: 95%;
-        padding-left: 2vw;
+        width: 92%;
+        padding-left: 3vw;
         
     }
     .textformat1 {
@@ -160,7 +194,25 @@
         margin-bottom: 0px;
     }
     .textformat2 {
-        margin-top: 0px;
+        margin: 0px;
+    }
+
+    .tableborder2 {
+        padding: 2%;
+        padding-left: 0px;
+        empty-cells: show;
+        padding-right: 0px;
+        border-spacing: 0px;
+        width: 92vw;
+    }
+    .tabledataformat2 td{
+        border-top: 2pt solid rgb(37, 37, 37);
+        border-bottom: 2pt solid rgb(37, 37, 37);
+        font-family: Arial;
+        font-size: 105%;
+        color: rgb(156, 156, 156);
+        height: 2vh;
+        text-align: center;
     }
     .diamond {
         float: right;
@@ -170,12 +222,19 @@
         margin: 0px;
         width: 28vw;
         position: relative;
-        right: 50vw;
+        right: 51.5vw;
         top: 4vh;
     }
     .signup {
+        margin-top: 1vh;
         margin-left: 3vw;
         height: 2vh; 
-        width: 32vw;
+        width: 28vw;
+        font-size: 12.5pt;
+        font-family: Arial;
+    }
+    .fullpricing {
+        position: absolute;
+        background-color: rgb(37, 37, 37);
     }
 }
